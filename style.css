@@ -163,4 +163,35 @@ h6 {
 }
 /* ##### End Layout2 Styling ##### */
 
+/* ##### Layout2 Styling ##### */
+.container3 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 5px;
+}
+
+.container3 > .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(2, 50px);
+  grid-auto-rows: 50px;
+  grid-auto-columns: 50px;
+  gap: 5px;
+}
+
+.align-left {
+  justify-content: left;
+}
+
+.align-center {
+  justify-content: center;
+}
+
+.align-right {
+  justify-content: right;
+}
+
+/* ##### End Layout2 Styling ##### */
+
 /* ##### End Main Styles ##### */
