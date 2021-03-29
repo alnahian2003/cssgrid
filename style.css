@@ -1,0 +1,166 @@
+html,
+body {
+  background-color: #f7fdff;
+  margin: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #8438ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
+.wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+}
+
+.wrapper > div:hover {
+  /* filter: brightness(90%); */
+  box-shadow: inset 0 10px 20px #00000030;
+  cursor: default;
+}
+
+.wrapper > div:nth-child(1n) {
+  background-color: #06d67f;
+}
+
+.wrapper > div:nth-child(2n) {
+  background-color: #ff537b;
+}
+
+.wrapper > div:nth-child(3n) {
+  background-color: #15a2ff;
+}
+
+.wrapper > div:nth-child(4n) {
+  background-color: #8438ff;
+}
+
+.wrapper > div:nth-child(5n) {
+  background-color: #3a47ff;
+}
+
+.wrapper > div:nth-child(6n) {
+  background-color: #ff9838;
+}
+
+/* ##### Main Styles ##### */
+
+/* Table of Conent */
+.toc {
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.toc > .btn {
+  padding: 10px;
+  background-color: red;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.toc > .btn:hover {
+  box-shadow: 0 10px 20px #00000020;
+  cursor: pointer;
+}
+
+.toc > a:nth-child(1n) {
+  background-color: #15a2ff;
+}
+
+.toc > a:nth-child(2n) {
+  background-color: #ff537b;
+}
+
+.toc > a:nth-child(3n) {
+  background-color: #3a47ff;
+}
+
+.toc > a:nth-child(4n) {
+  background-color: #06d67f;
+}
+
+.toc > a:nth-child(5n) {
+  background-color: #ff9838;
+}
+/* End Table of Conent */
+
+/* ##### Layout 1 Styling ##### */
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 90px auto 60px;
+  grid-gap: 10px;
+
+  grid-template-areas:
+    "h h h h h h h h h m m m"
+    "c c c c c c c c s s s s"
+    "a a f f f f f f f f f f";
+}
+
+.header {
+  /* grid-column: 1 / 10; */
+  grid-area: h;
+}
+
+.menu {
+  /* grid-column: 10 / -1; */
+  grid-area: m;
+}
+
+.sidebar {
+  /* grid-column: 1 / 5; */
+  grid-area: s;
+}
+
+.content {
+  /* grid-column: 5 / -1; */
+  grid-area: c;
+}
+
+.ad {
+  /* grid-column: 1/3; */
+  grid-area: a;
+}
+
+.footer {
+  /* grid-column: 1/-1; */
+  grid-area: f;
+}
+/* ##### End Layout1 Styling ##### */
+
+/* ##### Layout2 Styling ##### */
+.container2 {
+  height: 100vh;
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 5px;
+}
+/* ##### End Layout2 Styling ##### */
+
+/* ##### End Main Styles ##### */
